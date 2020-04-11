@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Welcome to GitHub Pages smijo.pro
 
 You can use the [editor on GitHub](https://github.com/smijo149/smijo.pro/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
