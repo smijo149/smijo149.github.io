@@ -127,8 +127,6 @@
   <meta name="csrf-token"
     content="vU/5bqzQk2osB8ZD4DQD/3WXnClcfV+ZNIVYAt9WbYZZt+A5R5j3SUw26p8fn+rMF5cDZydDk6DiCHITDwOu9w==">
 
-
-  <script>window.bugsnagClient = bugsnag("bd3b8914b9f474ccd31ad5f886872fb0")</script>
   <script src="./site_resources/40a50ceba6.js" async="async" defer="defer"></script>
 
   <script src="./site_resources/jquery.min.js" async="async" defer="defer"></script>
@@ -136,7 +134,6 @@
     href="./site_resources/application-1c1e7f6347028c26eed4cd3ae92a4508c101ff4027fd6d671ff48171cd819189.css">
   <script
     src="./site_resources/application-8e6231136cf77e87abd115b6a89cd6d7d3ee39453f629621d7af26c37a8ebb9c.js"></script>
-  <link rel="stylesheet" href="./site_resources/pro.min.css" media="all">
 </head>
 
 <body class="has-navbar-fixed-top">
@@ -219,7 +216,7 @@
                   </div>
                   <div class="content">
                     <div>Hi there 👋<br><br>My name is Smijo Thekkudan, and I'm currently in Houston, TX,
-                      USA.&nbsp;<br><br>I'm pretty good at Software developer, PHP, and Backend
+                      USA.&nbsp;<br><br>I'm pretty good at Software development, PHP, Laravel and Backend
                       development.&nbsp;<br><br>Thanks for dropping by my Profile!</div>
                   </div>
                 </div>
@@ -284,7 +281,7 @@
                 <hr class="primary">
                 <div class="content">
                   <div>Hi there 👋<br><br>My name is Smijo Thekkudan, and I'm currently in Houston, TX,
-                    USA.&nbsp;<br><br>I'm pretty good at Software developer, PHP, and Backend
+                    USA.&nbsp;<br><br>I'm pretty good at Software development, PHP, Laravel and Backend
                     development.&nbsp;<br><br>Thanks for dropping by my Profile!</div>
                 </div>
               </div>
@@ -416,30 +413,6 @@
           }
         });
       });
-    </script>
-
-    <script>
-      const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
-      function switchTheme(e) {
-        if (e.target.checked) {
-          document.documentElement.setAttribute('data-theme', 'dark');
-          localStorage.setItem('theme', 'dark'); //add this
-        }
-        else {
-          document.documentElement.setAttribute('data-theme', 'light');
-          localStorage.setItem('theme', 'light'); //add this
-        }
-      }
-
-      toggleSwitch.addEventListener('change', switchTheme, false);
-      const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
-      if (currentTheme) {
-        document.documentElement.setAttribute('data-theme', currentTheme);
-
-        if (currentTheme === 'dark') {
-          toggleSwitch.checked = true;
-        }
-      }
     </script>
 
     <script>
