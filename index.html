@@ -1,453 +1,389 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <style type="text/css" data-tag-name="trix-editor">
-    trix-editor {
-      display: block;
-    }
-
-    trix-editor:empty:not(:focus)::before {
-      content: attr(placeholder);
-      color: graytext;
-      cursor: text;
-    }
-
-    trix-editor a[contenteditable=false] {
-      cursor: text;
-    }
-
-    trix-editor img {
-      max-width: 100%;
-      height: auto;
-    }
-
-    trix-editor [data-trix-attachment] figcaption textarea {
-      resize: none;
-    }
-
-    trix-editor [data-trix-attachment] figcaption textarea.trix-autoresize-clone {
-      position: absolute;
-      left: -9999px;
-      max-height: 0px;
-    }
-
-    trix-editor [data-trix-attachment] figcaption[data-trix-placeholder]:empty::before {
-      content: attr(data-trix-placeholder);
-      color: graytext;
-    }
-
-    trix-editor [data-trix-cursor-target] {
-      display: inline-block !important;
-      width: 1px !important;
-      padding: 0 !important;
-      margin: 0 !important;
-      border: none !important;
-    }
-
-    trix-editor [data-trix-cursor-target=left] {
-      vertical-align: top !important;
-      margin-left: -1px !important;
-    }
-
-    trix-editor [data-trix-cursor-target=right] {
-      vertical-align: bottom !important;
-      margin-right: -1px !important;
-    }
-  </style>
-  <style type="text/css" data-tag-name="trix-toolbar">
-    trix-toolbar {
-      display: block;
-    }
-
-    trix-toolbar {
-      white-space: nowrap;
-    }
-
-    trix-toolbar [data-trix-dialog] {
-      display: none;
-    }
-
-    trix-toolbar [data-trix-dialog][data-trix-active] {
-      display: block;
-    }
-
-    trix-toolbar [data-trix-dialog] [data-trix-validate]:invalid {
-      background-color: #ffdddd;
-    }
-  </style>
-  <!--
-      /**
-       * @license
-       * MyFonts Webfont Build ID 3800383, 2019-08-23T05:49:49-0400
-       *
-       * The fonts listed in this notice are subject to the End User License
-       * Agreement(s) entered into by the website owner. All other parties are
-       * explicitly restricted from using the Licensed Webfonts(s).
-       *
-       * You may obtain a valid license at the URLs below.
-       *
-       * Webfont: TTCommons-Regular by TypeType
-       * URL: https://www.myfonts.com/fonts/type-type/tt-commons/regular/
-       * Copyright: Copyright (c) 2018-2019 by TypeType. Designers Ivan Gladkikh, Pavel
-       * Emelyanov. Technical designers Marina Khodak, Vika Usmanova, Nadyr Rakhimov, Antonina
-       * Zhulkova. All rights reserved.
-       * Licensed pageviews: 10,000
-       *
-       *
-       * License: https://www.myfonts.com/viewlicense?type=web&buildid=3800383
-       *
-       * © 2019 MyFonts Inc
-      */
-    -->
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-  <!-- Favicon and meta-tags -->
-  <link rel="icon" type="image/png" sizes="32x32" href="./site_resources/IMG_20181212_125611_small.jpg">
-  <link rel="icon" type="image/png" sizes="16x16" href="./site_resources/IMG_20181212_125611_thumb.jpg">
-  <title>Smijo Thekkudan Profile</title>
-  <meta name="description" content="I am a software developer!">
-
-  <!-- Facebook Open Graph data & Twitter Card data -->
-  <meta property="og:title" content="Smijo Thekkudan Profile">
-  <meta name="twitter:title" content="Smijo Thekkudan Profile">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://smijo.pro">
-  <meta property="og:image" content="./site_resources/IMG_20181212_125611_large.jpg">
-  <meta name="twitter:image:src" content="./site_resources/IMG_20181212_125611_large.jpg">
-  <meta property="og:description" content="I am a software developer!">
-  <meta name="twitter:description" content="I am a software developer!">
-
-
-
-  <meta name="csrf-param" content="authenticity_token">
-  <meta name="csrf-token"
-    content="vU/5bqzQk2osB8ZD4DQD/3WXnClcfV+ZNIVYAt9WbYZZt+A5R5j3SUw26p8fn+rMF5cDZydDk6DiCHITDwOu9w==">
-
-  <script src="./site_resources/40a50ceba6.js" async="async" defer="defer"></script>
-
-  <script src="./site_resources/jquery.min.js" async="async" defer="defer"></script>
-  <link rel="stylesheet" media="all"
-    href="./site_resources/application-1c1e7f6347028c26eed4cd3ae92a4508c101ff4027fd6d671ff48171cd819189.css">
-  <script
-    src="./site_resources/application-8e6231136cf77e87abd115b6a89cd6d7d3ee39453f629621d7af26c37a8ebb9c.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Smijo Thekkudan - Software Developer & Tech Lead</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .hero.is-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .card {
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-2px);
+        }
+        .section {
+            padding: 3rem 1.5rem;
+        }
+        .timeline-item {
+            border-left: 3px solid #667eea;
+            padding-left: 2rem;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -8px;
+            top: 0;
+            width: 13px;
+            height: 13px;
+            border-radius: 50%;
+            background: #667eea;
+        }
+        .skill-tag {
+            margin: 0.25rem;
+        }
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .contact-info {
+            margin: 0.5rem 0;
+        }
+        .contact-info i {
+            width: 20px;
+            margin-right: 0.5rem;
+            color: #667eea;
+        }
+    </style>
 </head>
-
-<body class="has-navbar-fixed-top">
-  <div class="has-navbar-fixed-top" id="top">
-    <nav class="navbar profile is-fixed-top is-hidden-mobile">
-      <div class="navbar-menu">
-        <div class="navbar-end">
-          <div class="navbar-item has-dropdown is-hoverable">
-            <div class="navbar-item">
-              <a class="button is-rounded">
-                <span class="icon">
-                  <i class="fal fa-chevron-circle-down" aria-hidden="true"></i>
-                </span>
-                <span>Navigate</span>
-              </a>
+<body>
+    <!-- Hero Section -->
+    <section class="hero is-primary">
+        <div class="hero-body">
+            <div class="container">
+                <div class="columns is-centered">
+                    <div class="column is-8 has-text-centered">
+                        <img src="https://via.placeholder.com/150x150/667eea/ffffff?text=ST" alt="Smijo Thekkudan" class="profile-image">
+                        <h1 class="title is-1 has-text-white mt-4">
+                            Smijo Thekkudan
+                        </h1>
+                        <h2 class="subtitle is-4 has-text-white">
+                            MBA (IT), B.E (IT) | Senior Tech Lead / Software Developer
+                        </h2>
+                        <div class="buttons is-centered">
+                            <a href="mailto:smijo.149@gmail.com" class="button is-white is-outlined">
+                                <span class="icon">
+                                    <i class="fas fa-envelope"></i>
+                                </span>
+                                <span>Email</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/smijo" class="button is-white is-outlined">
+                                <span class="icon">
+                                    <i class="fab fa-linkedin"></i>
+                                </span>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="https://smijo.pro" class="button is-white is-outlined">
+                                <span class="icon">
+                                    <i class="fas fa-globe"></i>
+                                </span>
+                                <span>Website</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div id="moreDropdown" class="navbar-dropdown is-boxed is-right"
-              style="max-height: 200px; overflow: scroll">
-              <a href="https://smijo.pro/#top" class="navbar-item">
-                <span class="icon">
-                  <i class="fal fa-lg fa-arrow-circle-up" aria-hidden="true"></i>
-                </span>
-                <span>Top</span>
-              </a>
-              <hr class="navbar-divider">
-              <a href="https://smijo.pro/#about" class="navbar-item">
-                <span class="icon">
-                  <i class="fal fa-lg fa-address-card" aria-hidden="true"></i>
-                </span>
-                <span>About</span>
-              </a>
-              <hr class="navbar-divider">
-              <a href="https://smijo.pro/#location" class="navbar-item">
-                <span class="icon">
-                  <i class="fal fa-lg fa-map-marker-alt" aria-hidden="true"></i>
-                </span>
-                <span>City</span>
-              </a>
-              <hr class="navbar-divider">
-              <a href="https://smijo.pro/#skills" class="navbar-item">
-                <span class="icon">
-                  <i class="fal fa-lg fa-atom" aria-hidden="true"></i>
-                </span>
-                <span>Skills</span>
-              </a>
-              <hr class="navbar-divider">
-            </div>
-          </div>
-          <div class="navbar-item"></div>
         </div>
-      </div>
-    </nav>
-
-    <section class="hero">
-      <div class="hero-body">
-        <div class="container">
-          <div class="column is-8 is-offset-2">
-            <figure class="image is-128x128" style="margin: 0 auto 0 auto" id="photo">
-              <img class="is-rounded" src="./site_resources/IMG_20181212_125611.jpg">
-            </figure>
-            <p class="title has-text-centered" style="margin-top: 1rem">Smijo Thekkudan </p>
-            <p class="subtitle has-text-centered">I am a software developer!</p>
-          </div>
-          <div class="columns is-centered" style="margin-top: 1rem;">
-            <div class="column is-4">
-              <div class="box box-shadow-lift" id="about">
-                <div class="card-content">
-                  <div class="media">
-                    <div class="media-content">
-                      <p class="title is-4">About</p>
-                      <hr class="primary">
-                    </div>
-                    <div class="media-right">
-                      <a id="about-expand">
-                        <span class="icon has-text-info">
-                          <i class="fad fa-expand-alt" aria-hidden="true"></i>
-                        </span>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="content">
-                    <div>Hi there 👋<br><br>My name is Smijo Thekkudan, and I'm currently in Houston, TX,
-                      USA.&nbsp;<br><br>I'm pretty good at Software development, PHP, Laravel and Backend
-                      development.&nbsp;<br><br>Thanks for dropping by my Profile!</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="column is-4">
-              <div class="box box-shadow-lift" id="location">
-                <div class="card-content">
-                  <div class="media">
-                    <div class="media-content">
-                      <p class="title is-4">City</p>
-                      <hr class="primary">
-                    </div>
-                  </div>
-                  <span class="icon has-text-danger">
-                    <i class="fad fa-map-marker-alt" aria-hidden="true"></i>
-                  </span>
-                  <span class="">Houston, TX, USA</span>
-                </div>
-              </div>
-              <div class="box box-shadow-lift" id="skills">
-                <div class="card-content">
-                  <div class="media">
-                    <div class="media-content">
-                      <p class="title is-4">Skills</p>
-                      <hr class="primary">
-                    </div>
-                  </div>
-                  <div class="content">
-                    <div class="tags">
-                      <span class="tag is-rounded">Software developer&nbsp;</span>
-                      <span class="tag is-rounded">PHP&nbsp;</span>
-                      <span class="tag is-rounded">Backend development&nbsp;</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
 
-    <div class="modal is-modal">
-      <div class="modal-background modal-background-bright modal-close-1"></div>
-      <div class="modal-content modal-style">
-        <div class="card-content">
-          <div class="media">
-            <div class="media-content">
-              <div class="column">
-                <div class="columns">
-                  <div class="column margin-center">
-                    <p class="title is-4">About Smijo Thekkudan</p>
-                    <p class="subtitle is-6">I am a software developer!</p>
-                  </div>
-                  <div class="column is-2">
-                    <figure class="image is-64x64">
-                      <img class="is-rounded" src="./site_resources/IMG_20181212_125611(1).jpg">
-                    </figure>
-                  </div>
+    <!-- Professional Overview -->
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-8 is-offset-2">
+                    <div class="card">
+                        <div class="card-content">
+                            <h3 class="title is-3 has-text-primary">
+                                <i class="fas fa-user mr-2"></i>Professional Overview
+                            </h3>
+                            <p class="content is-medium">
+                                Software Developer with over 14 years in web development. Progressed from a Developer at India's reputed software company to higher positions as Designer & Tech Lead. Expertise in building scalable software solutions using PHP and Java, with proven success in delivering high-value, production-ready systems.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <hr class="primary">
-                <div class="content">
-                  <div>Hi there 👋<br><br>My name is Smijo Thekkudan, and I'm currently in Houston, TX,
-                    USA.&nbsp;<br><br>I'm pretty good at Software development, PHP, Laravel and Backend
-                    development.&nbsp;<br><br>Thanks for dropping by my Profile!</div>
-                </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
-      <button class="modal-close is-large" aria-label="close"></button>
-    </div>
+    </section>
 
-    <div class="modal is-modal-1">
-      <div class="modal-background modal-background-bright modal-close-1"></div>
-      <div class="modal-content modal-style">
-        <div class="card-content">
-          <div class="media">
-            <div class="media-content">
-              <div class="column">
-                <div class="columns">
-                  <div class="column margin-center">
-                    <p class="title is-4">Smijo Thekkudan's Gallery</p>
-                    <p class="subtitle is-6">I am a software developer!</p>
-                  </div>
-                  <div class="column is-2">
-                    <figure class="image is-64x64">
-                      <img class="is-rounded" src="./site_resources/IMG_20181212_125611(1).jpg">
-                    </figure>
-                  </div>
+    <!-- Skills Section -->
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-8 is-offset-2">
+                    <div class="card">
+                        <div class="card-content">
+                            <h3 class="title is-3 has-text-primary">
+                                <i class="fas fa-star mr-2"></i>Highlights
+                            </h3>
+                            <div class="tags are-medium">
+                                <span class="tag is-primary skill-tag">PHP Web Developer</span>
+                                <span class="tag is-info skill-tag">Google Cloud Platform (GCP)</span>
+                                <span class="tag is-success skill-tag">Multilingual (English, Telugu, Malayalam & Hindi)</span>
+                                <span class="tag is-warning skill-tag">Architect and design softwares</span>
+                                <span class="tag is-danger skill-tag">Project & Team Leader</span>
+                            </div>
+                            
+                            <h3 class="title is-3 has-text-primary mt-5">
+                                <i class="fas fa-cogs mr-2"></i>Technical Expertise
+                            </h3>
+                            <div class="columns is-multiline">
+                                <div class="column is-6">
+                                    <ul class="content">
+                                        <li><strong>Programming Languages:</strong> PHP</li>
+                                        <li><strong>Programming Tools:</strong> PhpStorm</li>
+                                        <li><strong>Web Service Testing Tools:</strong> Postman, PHPUnit</li>
+                                        <li><strong>DevOps:</strong> Google Cloud Platform (GCP)</li>
+                                    </ul>
+                                </div>
+                                <div class="column is-6">
+                                    <ul class="content">
+                                        <li><strong>PHP Frameworks:</strong> Laravel</li>
+                                        <li><strong>Load Testing Tools:</strong> K6.io, Jmeter</li>
+                                        <li><strong>Version Control:</strong> Github</li>
+                                        <li><strong>Database:</strong> MongoDB, MySQL</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <hr class="primary">
-              </div>
             </div>
-          </div>
         </div>
-      </div>
-      <button class="modal-close is-large" aria-label="close"></button>
-    </div>
+    </section>
 
-    <div class="modal is-modal-2">
-      <div class="modal-background modal-background-bright modal-close-1"></div>
-      <div class="modal-content modal-style">
-        <div class="card-content">
-          <div class="media">
-            <div class="media-content">
-              <div class="column">
-                <div class="columns">
-                  <div class="column margin-center">
-                    <p class="title is-4">Smijo Thekkudan's Videos</p>
-                    <p class="subtitle is-6">I am a software developer!</p>
-                  </div>
-                  <div class="column is-2">
-                    <figure class="image is-64x64">
-                      <img class="is-rounded" src="./site_resources/IMG_20181212_125611(1).jpg">
-                    </figure>
-                  </div>
+    <!-- Work Experience -->
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-8 is-offset-2">
+                    <h3 class="title is-2 has-text-centered has-text-primary mb-5">
+                        <i class="fas fa-briefcase mr-2"></i>Work Experience
+                    </h3>
+                    
+                    <!-- Current Role -->
+                    <div class="card mb-5">
+                        <div class="card-content">
+                            <div class="columns">
+                                <div class="column is-8">
+                                    <h4 class="title is-4">Senior Tech Lead / Tech Lead / PHP Full-Stack Web Developer</h4>
+                                    <p class="subtitle is-6 has-text-primary">FPK Services, LLC DBA Analyte Health</p>
+                                    <p class="has-text-grey">Houston, TX | April 2019 – Present</p>
+                                </div>
+                                <div class="column is-4 has-text-right">
+                                    <span class="tag is-primary">Current</span>
+                                </div>
+                            </div>
+                            <div class="content mt-4">
+                                <p><strong>Project:</strong> FPK Services provides easy, accessible and affordable online health care services for everyone. The online lab testing provider works with thousands of trusted certified testing labs across the United States, making inexpensive laboratory testing a convenient option.</p>
+                                <ul>
+                                    <li>Confer with systems analysts, engineers programmers and others to design systems and obtain information on project limitations and capabilities, performance requirements and interfaces.</li>
+                                    <li>Provide backend services and the interchange of data between the server and the users.</li>
+                                    <li>Analyze user needs and software requirements to determine feasibility of design within time and cost constraints.</li>
+                                    <li>Assist with development of all server-side logic, definition and maintenance of the central database to ensure high performance and responsiveness to requests from the front-end.</li>
+                                    <li>Design, develop, integrate and test feature requests of the Application Programming Interface (API) with PHP.</li>
+                                    <li>Do website integration testing by writing automated Behat tests and PHPUnit tests.</li>
+                                    <li>Modify existing software to fix bugs and improve its performance.</li>
+                                    <li>Prepare API documents, manage source code and establish web development and technical support standards and procedures.</li>
+                                    <li>Do peer code reviews on a daily basis to ensure quality code.</li>
+                                    <li>Do emergency bug fixes and rollouts to production whenever needed.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Previous Roles -->
+                    <div class="timeline-item">
+                        <div class="card">
+                            <div class="card-content">
+                                <h4 class="title is-4">Team Lead, Java Developer</h4>
+                                <p class="subtitle is-6 has-text-primary">Jobiak</p>
+                                <p class="has-text-grey">Hyderabad, India | July 2018 – Feb 2019</p>
+                                <div class="content mt-3">
+                                    <p><strong>Project:</strong> Jobiak is a company which simplifies posting to Google for Jobs by using advanced machine learning tools to read your job post, identify the attributes required, format them to meet Google's tag requirements and then submit the updated job post to Google for Jobs with no coding required.</p>
+                                    <ul>
+                                        <li>Take requirements from the client and build the features from scratch.</li>
+                                        <li>Architect software solutions to fulfill application features.</li>
+                                        <li>Write code for complex business logic using Java Spring Framework.</li>
+                                        <li>Daily code reviews to ensure that clean and quality code is being moved to production servers.</li>
+                                        <li>Handle production deployments to Linux servers.</li>
+                                        <li>Lead a team of 7.</li>
+                                        <li>Assign daily tasks to the team via JIRA and make sure the team is fully productive.</li>
+                                        <li>Train the team and make sure all the team members are competent.</li>
+                                        <li>Report to the CEO on a daily basis about the project progress.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="card">
+                            <div class="card-content">
+                                <h4 class="title is-4">Senior Tech Lead / PHP Backend Senior Developer</h4>
+                                <p class="subtitle is-6 has-text-primary">Medology Technologies Pvt. Ltd.</p>
+                                <p class="has-text-grey">Hyderabad, India | August 2016 – June 2018</p>
+                                <div class="content mt-3">
+                                    <p><strong>Project:</strong> Medology provides easy, accessible and affordable online health care services for everyone.</p>
+                                    <ul>
+                                        <li>Developed Starfish REST API with PHP.</li>
+                                        <li>Built the application from scratch.</li>
+                                        <li>Architect software solutions to fulfill application features.</li>
+                                        <li>Did code reviews every day to ensure whatever code we are deploying is of high quality.</li>
+                                        <li>Implemented and tested feature requests.</li>
+                                        <li>Built automated PHP unit and integration testing for the API.</li>
+                                        <li>Managed a team of 8 developers.</li>
+                                        <li>Conducted calls with our US team every day.</li>
+                                        <li>Handled regular deployments to the production server.</li>
+                                        <li>Did instant fixes and rollouts to production.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="card">
+                            <div class="card-content">
+                                <h4 class="title is-4">Team Lead, Android App Developer, PHP Full Stack Developer</h4>
+                                <p class="subtitle is-6 has-text-primary">Squaredoor</p>
+                                <p class="has-text-grey">Hyderabad, India | July 2014 – July 2016</p>
+                                <div class="content mt-3">
+                                    <p><strong>Project:</strong> Squaredoor is a startup company based on vacation rentals and home stays worldwide, with development platforms, PHP, Android and iOS. Currently working as a team lead and developer of the PHP Web application and Android mobile application.</p>
+                                    <ul>
+                                        <li>Developed web applications using PHP, HTML and CSS.</li>
+                                        <li>Updated, modified and enhanced existing application.</li>
+                                        <li>Implemented and tested enhancement feature requests, to enhance product functionality.</li>
+                                        <li>Manual unit and integration testing of Web application.</li>
+                                        <li>Developed REST API for mobile application.</li>
+                                        <li>Developed mobile applications for Android platform and successfully launched on Google play store.</li>
+                                        <li>Manual unit and integration testing of Mobile application.</li>
+                                        <li>Conduct induction and project training for the new members.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="card">
+                            <div class="card-content">
+                                <h4 class="title is-4">Module Lead, Designer, Developer</h4>
+                                <p class="subtitle is-6 has-text-primary">Tata Consultancy Services</p>
+                                <p class="has-text-grey">Bangalore, India | July 2011 – May 2014</p>
+                                <div class="content mt-3">
+                                    <p><strong>Project:</strong> Worked as a Java developer in banking related projects, which mostly dealt with credit card authentications and transactions. Client was a bank based out of the USA.</p>
+                                    <ul>
+                                        <li>Coordinating with Onsite-Offshore team</li>
+                                        <li>Create High Level and Low Level design documents (Use Case diagrams).</li>
+                                        <li>Coding of new Use-Cases and make changes to the impacted programs.</li>
+                                        <li>Build and deploy the Application in the Development/Production Environment.</li>
+                                        <li>Modification of the application stored procedures on Oracle.</li>
+                                        <li>Conduct induction and project training for the new members.</li>
+                                        <li>Join Link Migration calls to make sure of a successful migration.</li>
+                                        <li>Drive CMR calls to implement changes in production.</li>
+                                        <li>Module lead in a critical project to fix production issues of card data capture application.</li>
+                                        <li>Drove continual improvement to system architecture by refactoring old legacy code.</li>
+                                        <li>Coordinated with QA testers for end-to-end unit testing and post-production testing.</li>
+                                        <li>Resolved customer issues by establishing workarounds and solutions and by debugging and creating defect fixes.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <hr class="primary">
-              </div>
             </div>
-          </div>
         </div>
-      </div>
-      <button class="modal-close is-large" aria-label="close"></button>
-    </div>
+    </section>
 
-    <div class="modal is-modal-4">
-      <div class="modal-background modal-background-bright modal-close-1"></div>
-      <div class="modal-content modal-style">
-        <div class="card-content">
-          <div class="media">
-            <div class="media-content">
-              <div class="column">
-                <div class="columns">
-                  <div class="column margin-center">
-                    <p class="title is-4">Random Facts about Smijo Thekkudan</p>
-                    <p class="subtitle is-6">I am a software developer!</p>
-                  </div>
-                  <div class="column is-2">
-                    <figure class="image is-64x64">
-                      <img class="is-rounded" src="./site_resources/IMG_20181212_125611(1).jpg">
-                    </figure>
-                  </div>
+    <!-- Education & Accomplishments -->
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-6">
+                    <div class="card">
+                        <div class="card-content">
+                            <h3 class="title is-3 has-text-primary">
+                                <i class="fas fa-graduation-cap mr-2"></i>Education
+                            </h3>
+                            <div class="content">
+                                <div class="mb-4">
+                                    <h4 class="title is-5">Master of Business Administration, Information Technology</h4>
+                                    <p class="has-text-grey">AMITY University, Noida, India</p>
+                                    <p><strong>CGPA:</strong> 7.00 | <strong>Year:</strong> 2017</p>
+                                </div>
+                                <div>
+                                    <h4 class="title is-5">Bachelor of Engineering, Information Technology</h4>
+                                    <p class="has-text-grey">GITAM University, Visakhapatnam, Andhra Pradesh</p>
+                                    <p><strong>Percentage:</strong> 83.4% | <strong>Year:</strong> 2011</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <hr class="primary">
-              </div>
+                <div class="column is-6">
+                    <div class="card">
+                        <div class="card-content">
+                            <h3 class="title is-3 has-text-primary">
+                                <i class="fas fa-trophy mr-2"></i>Accomplishments
+                            </h3>
+                            <div class="content">
+                                <ul>
+                                    <li>Promoted as Systems Engineer within 2 years of employment.</li>
+                                    <li>Promoted as Designer & Module Lead after working as a software developer.</li>
+                                    <li>Awarded as star performer of the learner's group at the end of my 3 months training period at TCS.</li>
+                                    <li>Developed and deployed multiple full-stack web applications from the ground up.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-      <button class="modal-close is-large" aria-label="close"></button>
-    </div>
+    </section>
 
-    <script>
-      $('#about-expand').on('click', function (e) {
-        e.preventDefault();
-        $('.is-modal').toggleClass('is-active');
-      });
-      $('#photo-expand').on('click', function (e) {
-        e.preventDefault();
-        $('.is-modal-1').toggleClass('is-active');
-      });
-      $('#video-expand').on('click', function (e) {
-        e.preventDefault();
-        $('.is-modal-2').toggleClass('is-active');
-      });
-      $('#random-facts-expand').on('click', function (e) {
-        e.preventDefault();
-        $('.is-modal-4').toggleClass('is-active');
-      });
-      $('#contact-me-expand').on('click', function (e) {
-        e.preventDefault();
-        $('.is-modal-6').toggleClass('is-active');
-      });
-      $('.modal-close, .modal-close-1').on('click', function (e) {
-        e.preventDefault();
-        $('.modal').removeClass('is-active');
-      });
-    </script>
-
-    <script>
-      $(function () {
-        $('a[href*=\\#]:not([href=\\#])').on('click', function () {
-          var target = $(this.hash);
-          target = target.length ? target : $('[name=' + this.hash.substr(1) + ']');
-          if (target.length) {
-            $('html,body').animate({
-              scrollTop: target.offset().top - 58
-            }, 700);
-            return false;
-          }
-        });
-      });
-    </script>
-
-    <script>
-      function youTubes_makeDynamic() {
-        var $ytIframes = $('iframe[src*="youtube.com"]');
-        $ytIframes.each(function (i, e) {
-          var $ytFrame = $(e);
-          var ytKey; var tmp = $ytFrame.attr('src').split(/\//); tmp = tmp[tmp.length - 1]; tmp = tmp.split('?'); ytKey = tmp[0];
-          var $ytLoader = $('<div class="ytLoader">');
-          $ytLoader.append($('<img class="cover" src="https://i.ytimg.com/vi/' + ytKey + '/hqdefault.jpg">'));
-          $ytLoader.data('$ytFrame', $ytFrame);
-          $ytFrame.replaceWith($ytLoader);
-          $ytLoader.click(function () {
-            var $ytFrame = $ytLoader.data('$ytFrame');
-            $ytFrame.attr('src', $ytFrame.attr('src') + '?autoplay=1');
-            $ytLoader.replaceWith($ytFrame);
-          });
-        });
-      };
-      $(document).ready(function () { youTubes_makeDynamic() });
-    </script>
-
-    <script>
-      $(document).ready(function () {
-        // Open all external links in a new window
-        addEventListener("click", function (event) {
-          var el = event.target
-
-          if (el.tagName === "A" && !el.isContentEditable && el.host !== window.location.host) {
-            el.setAttribute("target", "_blank")
-          }
-        }, true)
-      });
-    </script>
-  </div>
+    <!-- Footer -->
+    <footer class="footer has-background-primary has-text-white">
+        <div class="container">
+            <div class="columns">
+                <div class="column has-text-centered">
+                    <p class="title is-4 has-text-white">Smijo Thekkudan</p>
+                    <p class="subtitle is-6 has-text-white">Software Developer & Tech Lead</p>
+                    <div class="buttons is-centered">
+                        <a href="mailto:smijo.149@gmail.com" class="button is-white is-outlined">
+                            <span class="icon">
+                                <i class="fas fa-envelope"></i>
+                            </span>
+                            <span>Email</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/smijo" class="button is-white is-outlined">
+                            <span class="icon">
+                                <i class="fab fa-linkedin"></i>
+                            </span>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://smijo.pro" class="button is-white is-outlined">
+                            <span class="icon">
+                                <i class="fas fa-globe"></i>
+                            </span>
+                            <span>Website</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
-
 </html>
