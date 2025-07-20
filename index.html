@@ -7,9 +7,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        .hero.is-primary {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        }
         .card {
             border-radius: 12px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -60,36 +57,36 @@
 </head>
 <body>
     <!-- Hero Section -->
-    <section class="hero is-primary">
+    <section class="hero has-text-black has-background-light">
         <div class="hero-body">
             <div class="container">
                 <div class="columns is-centered">
                     <div class="column is-8 has-text-centered">
-                        <img src="https://via.placeholder.com/150x150/667eea/ffffff?text=ST" alt="Smijo Thekkudan" class="profile-image">
-                        <h1 class="title is-1 has-text-white mt-4">
+                        <img src="site_resources/IMG_20181212_125611_large.jpg" alt="Smijo Thekkudan" class="profile-image">
+                        <h1 class="title is-1 mt-4">
                             Smijo Thekkudan
                         </h1>
-                        <h2 class="subtitle is-4 has-text-white">
+                        <h2 class="subtitle is-4">
                             MBA (IT), B.E (IT) | Senior Tech Lead / Software Developer
                         </h2>
                         <div class="buttons is-centered">
-                            <a href="mailto:smijo.149@gmail.com" class="button is-white is-outlined">
+                            <a href="https://maps.app.goo.gl/iU8WDXax5n6K4wAq8" class="button is-outlined">
+                                <span class="icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </span>
+                                <span>Houston, TX</span>
+                            </a>
+                            <a href="mailto:smijo.149@gmail.com" class="button is-outlined">
                                 <span class="icon">
                                     <i class="fas fa-envelope"></i>
                                 </span>
                                 <span>Email</span>
                             </a>
-                            <a href="https://www.linkedin.com/in/smijo" class="button is-white is-outlined">
+                            <a href="https://www.linkedin.com/in/smijo" class="button is-outlined">
                                 <span class="icon">
                                     <i class="fab fa-linkedin"></i>
                                 </span>
                                 <span>LinkedIn</span>
-                            </a>
-                            <a href="https://smijo.pro" class="button is-white is-outlined">
-                                <span class="icon">
-                                    <i class="fas fa-globe"></i>
-                                </span>
-                                <span>Website</span>
                             </a>
                         </div>
                     </div>
@@ -102,14 +99,14 @@
     <section class="section">
         <div class="container">
             <div class="columns">
-                <div class="column is-8 is-offset-2">
+                <div class="column">
                     <div class="card">
                         <div class="card-content">
-                            <h3 class="title is-3 has-text-primary">
+                            <h3 class="title is-3 has-text-dark">
                                 <i class="fas fa-user mr-2"></i>Professional Overview
                             </h3>
                             <p class="content is-medium">
-                                Software Developer with over 14 years in web development. Progressed from a Developer at India's reputed software company to higher positions as Designer & Tech Lead. Expertise in building scalable software solutions using PHP and Java, with proven success in delivering high-value, production-ready systems.
+                                Software Developer with over 14 years in web development. Progressed from a Developer at India's reputed software company to higher positions as Designer & Tech Lead. Expertise in building scalable software solutions using PHP and Java, with proven success in delivering high-value, production-ready web applications.
                             </p>
                         </div>
                     </div>
@@ -122,10 +119,10 @@
     <section class="section">
         <div class="container">
             <div class="columns">
-                <div class="column is-8 is-offset-2">
+                <div class="column">
                     <div class="card">
                         <div class="card-content">
-                            <h3 class="title is-3 has-text-primary">
+                            <h3 class="title is-3 has-text-dark">
                                 <i class="fas fa-star mr-2"></i>Highlights
                             </h3>
                             <div class="tags are-medium">
@@ -135,28 +132,6 @@
                                 <span class="tag is-warning skill-tag">Architect and design softwares</span>
                                 <span class="tag is-danger skill-tag">Project & Team Leader</span>
                             </div>
-                            
-                            <h3 class="title is-3 has-text-primary mt-5">
-                                <i class="fas fa-cogs mr-2"></i>Technical Expertise
-                            </h3>
-                            <div class="columns is-multiline">
-                                <div class="column is-6">
-                                    <ul class="content">
-                                        <li><strong>Programming Languages:</strong> PHP</li>
-                                        <li><strong>Programming Tools:</strong> PhpStorm</li>
-                                        <li><strong>Web Service Testing Tools:</strong> Postman, PHPUnit</li>
-                                        <li><strong>DevOps:</strong> Google Cloud Platform (GCP)</li>
-                                    </ul>
-                                </div>
-                                <div class="column is-6">
-                                    <ul class="content">
-                                        <li><strong>PHP Frameworks:</strong> Laravel</li>
-                                        <li><strong>Load Testing Tools:</strong> K6.io, Jmeter</li>
-                                        <li><strong>Version Control:</strong> Github</li>
-                                        <li><strong>Database:</strong> MongoDB, MySQL</li>
-                                    </ul>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -164,12 +139,47 @@
         </div>
     </section>
 
+        <!-- Skills Section -->
+        <section class="section">
+            <div class="container">
+                <div class="columns">
+                    <div class="column">
+                        <div class="card">
+                            <div class="card-content">
+                                <h3 class="title is-3 has-text-dark mt-5">
+                                    <i class="fas fa-cogs mr-2"></i>Technical Expertise
+                                </h3>
+                                <div class="columns is-multiline">
+                                    <div class="column is-6">
+                                        <ul class="content">
+                                            <li><strong>Programming Languages:</strong> PHP</li>
+                                            <li><strong>Programming Tools:</strong> PhpStorm</li>
+                                            <li><strong>Web Service Testing Tools:</strong> Postman, PHPUnit</li>
+                                            <li><strong>DevOps:</strong> Google Cloud Platform (GCP)</li>
+                                        </ul>
+                                    </div>
+                                    <div class="column is-6">
+                                        <ul class="content">
+                                            <li><strong>PHP Frameworks:</strong> Laravel</li>
+                                            <li><strong>Load Testing Tools:</strong> K6.io, Jmeter</li>
+                                            <li><strong>Version Control:</strong> Github</li>
+                                            <li><strong>Database:</strong> MongoDB, MySQL</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     <!-- Work Experience -->
     <section class="section">
         <div class="container">
             <div class="columns">
-                <div class="column is-8 is-offset-2">
-                    <h3 class="title is-2 has-text-centered has-text-primary mb-5">
+                <div class="column">
+                    <h3 class="title is-3 has-text-centered has-text-dark mb-5">
                         <i class="fas fa-briefcase mr-2"></i>Work Experience
                     </h3>
                     
@@ -188,18 +198,6 @@
                             </div>
                             <div class="content mt-4">
                                 <p><strong>Project:</strong> FPK Services provides easy, accessible and affordable online health care services for everyone. The online lab testing provider works with thousands of trusted certified testing labs across the United States, making inexpensive laboratory testing a convenient option.</p>
-                                <ul>
-                                    <li>Confer with systems analysts, engineers programmers and others to design systems and obtain information on project limitations and capabilities, performance requirements and interfaces.</li>
-                                    <li>Provide backend services and the interchange of data between the server and the users.</li>
-                                    <li>Analyze user needs and software requirements to determine feasibility of design within time and cost constraints.</li>
-                                    <li>Assist with development of all server-side logic, definition and maintenance of the central database to ensure high performance and responsiveness to requests from the front-end.</li>
-                                    <li>Design, develop, integrate and test feature requests of the Application Programming Interface (API) with PHP.</li>
-                                    <li>Do website integration testing by writing automated Behat tests and PHPUnit tests.</li>
-                                    <li>Modify existing software to fix bugs and improve its performance.</li>
-                                    <li>Prepare API documents, manage source code and establish web development and technical support standards and procedures.</li>
-                                    <li>Do peer code reviews on a daily basis to ensure quality code.</li>
-                                    <li>Do emergency bug fixes and rollouts to production whenever needed.</li>
-                                </ul>
                             </div>
                         </div>
                     </div>
@@ -213,17 +211,6 @@
                                 <p class="has-text-grey">Hyderabad, India | July 2018 – Feb 2019</p>
                                 <div class="content mt-3">
                                     <p><strong>Project:</strong> Jobiak is a company which simplifies posting to Google for Jobs by using advanced machine learning tools to read your job post, identify the attributes required, format them to meet Google's tag requirements and then submit the updated job post to Google for Jobs with no coding required.</p>
-                                    <ul>
-                                        <li>Take requirements from the client and build the features from scratch.</li>
-                                        <li>Architect software solutions to fulfill application features.</li>
-                                        <li>Write code for complex business logic using Java Spring Framework.</li>
-                                        <li>Daily code reviews to ensure that clean and quality code is being moved to production servers.</li>
-                                        <li>Handle production deployments to Linux servers.</li>
-                                        <li>Lead a team of 7.</li>
-                                        <li>Assign daily tasks to the team via JIRA and make sure the team is fully productive.</li>
-                                        <li>Train the team and make sure all the team members are competent.</li>
-                                        <li>Report to the CEO on a daily basis about the project progress.</li>
-                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -237,18 +224,6 @@
                                 <p class="has-text-grey">Hyderabad, India | August 2016 – June 2018</p>
                                 <div class="content mt-3">
                                     <p><strong>Project:</strong> Medology provides easy, accessible and affordable online health care services for everyone.</p>
-                                    <ul>
-                                        <li>Developed Starfish REST API with PHP.</li>
-                                        <li>Built the application from scratch.</li>
-                                        <li>Architect software solutions to fulfill application features.</li>
-                                        <li>Did code reviews every day to ensure whatever code we are deploying is of high quality.</li>
-                                        <li>Implemented and tested feature requests.</li>
-                                        <li>Built automated PHP unit and integration testing for the API.</li>
-                                        <li>Managed a team of 8 developers.</li>
-                                        <li>Conducted calls with our US team every day.</li>
-                                        <li>Handled regular deployments to the production server.</li>
-                                        <li>Did instant fixes and rollouts to production.</li>
-                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -262,16 +237,6 @@
                                 <p class="has-text-grey">Hyderabad, India | July 2014 – July 2016</p>
                                 <div class="content mt-3">
                                     <p><strong>Project:</strong> Squaredoor is a startup company based on vacation rentals and home stays worldwide, with development platforms, PHP, Android and iOS. Currently working as a team lead and developer of the PHP Web application and Android mobile application.</p>
-                                    <ul>
-                                        <li>Developed web applications using PHP, HTML and CSS.</li>
-                                        <li>Updated, modified and enhanced existing application.</li>
-                                        <li>Implemented and tested enhancement feature requests, to enhance product functionality.</li>
-                                        <li>Manual unit and integration testing of Web application.</li>
-                                        <li>Developed REST API for mobile application.</li>
-                                        <li>Developed mobile applications for Android platform and successfully launched on Google play store.</li>
-                                        <li>Manual unit and integration testing of Mobile application.</li>
-                                        <li>Conduct induction and project training for the new members.</li>
-                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -280,25 +245,11 @@
                     <div class="timeline-item">
                         <div class="card">
                             <div class="card-content">
-                                <h4 class="title is-4">Module Lead, Designer, Developer</h4>
+                                <h4 class="title is-4">Module Lead, Developer</h4>
                                 <p class="subtitle is-6 has-text-primary">Tata Consultancy Services</p>
                                 <p class="has-text-grey">Bangalore, India | July 2011 – May 2014</p>
                                 <div class="content mt-3">
                                     <p><strong>Project:</strong> Worked as a Java developer in banking related projects, which mostly dealt with credit card authentications and transactions. Client was a bank based out of the USA.</p>
-                                    <ul>
-                                        <li>Coordinating with Onsite-Offshore team</li>
-                                        <li>Create High Level and Low Level design documents (Use Case diagrams).</li>
-                                        <li>Coding of new Use-Cases and make changes to the impacted programs.</li>
-                                        <li>Build and deploy the Application in the Development/Production Environment.</li>
-                                        <li>Modification of the application stored procedures on Oracle.</li>
-                                        <li>Conduct induction and project training for the new members.</li>
-                                        <li>Join Link Migration calls to make sure of a successful migration.</li>
-                                        <li>Drive CMR calls to implement changes in production.</li>
-                                        <li>Module lead in a critical project to fix production issues of card data capture application.</li>
-                                        <li>Drove continual improvement to system architecture by refactoring old legacy code.</li>
-                                        <li>Coordinated with QA testers for end-to-end unit testing and post-production testing.</li>
-                                        <li>Resolved customer issues by establishing workarounds and solutions and by debugging and creating defect fixes.</li>
-                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -312,10 +263,10 @@
     <section class="section">
         <div class="container">
             <div class="columns">
-                <div class="column is-6">
+                <div class="column">
                     <div class="card">
                         <div class="card-content">
-                            <h3 class="title is-3 has-text-primary">
+                            <h3 class="title is-3 has-text-dark">
                                 <i class="fas fa-graduation-cap mr-2"></i>Education
                             </h3>
                             <div class="content">
@@ -333,52 +284,23 @@
                         </div>
                     </div>
                 </div>
-                <div class="column is-6">
-                    <div class="card">
-                        <div class="card-content">
-                            <h3 class="title is-3 has-text-primary">
-                                <i class="fas fa-trophy mr-2"></i>Accomplishments
-                            </h3>
-                            <div class="content">
-                                <ul>
-                                    <li>Promoted as Systems Engineer within 2 years of employment.</li>
-                                    <li>Promoted as Designer & Module Lead after working as a software developer.</li>
-                                    <li>Awarded as star performer of the learner's group at the end of my 3 months training period at TCS.</li>
-                                    <li>Developed and deployed multiple full-stack web applications from the ground up.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer has-background-primary has-text-white">
+    <footer class="footer has-text-black has-background-light">
         <div class="container">
             <div class="columns">
                 <div class="column has-text-centered">
-                    <p class="title is-4 has-text-white">Smijo Thekkudan</p>
-                    <p class="subtitle is-6 has-text-white">Software Developer & Tech Lead</p>
+                    <p class="title is-4">Smijo Thekkudan</p>
+                    <p class="subtitle is-6">Software Developer & Tech Lead</p>
                     <div class="buttons is-centered">
-                        <a href="mailto:smijo.149@gmail.com" class="button is-white is-outlined">
+                        <a href="mailto:smijo.149@gmail.com" class="button is-outlined">
                             <span class="icon">
                                 <i class="fas fa-envelope"></i>
                             </span>
-                            <span>Email</span>
-                        </a>
-                        <a href="https://www.linkedin.com/in/smijo" class="button is-white is-outlined">
-                            <span class="icon">
-                                <i class="fab fa-linkedin"></i>
-                            </span>
-                            <span>LinkedIn</span>
-                        </a>
-                        <a href="https://smijo.pro" class="button is-white is-outlined">
-                            <span class="icon">
-                                <i class="fas fa-globe"></i>
-                            </span>
-                            <span>Website</span>
+                            <span>Hire Me!</span>
                         </a>
                     </div>
                 </div>
